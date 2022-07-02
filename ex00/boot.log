@@ -1,0 +1,476 @@
+Jul 02 05:03:03 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jul 02 05:03:04 +02:00 (none)  Bringing up the loopback interface... OK
+Jul 02 05:03:04 +02:00 (none)  Setting hostname to sel-melc... OK
+Jul 02 05:03:04 +02:00 sel-melc  Populating /dev with device nodes...  OK
+Jul 02 03:39:13 +02:00 sel-melc  Activating all swap files/partitions... OK
+Jul 02 03:39:13 +02:00 sel-melc  Mounting root file system in read-only mode...  OK
+Jul 02 03:39:13 +02:00 sel-melc  Checking file systems... OK
+Jul 02 03:39:13 +02:00 sel-melc  Remounting root file system in read-write mode... OK
+Jul 02 03:39:13 +02:00 sel-melc  Mounting remaining file systems... OK
+Jul 02 03:39:13 +02:00 sel-melc  Cleaning file systems: /tmp OK
+Jul 02 03:39:13 +02:00 sel-melc  Retrying failed uevents, if any... OK
+Jul 02 03:39:14 +02:00 sel-melc  Setting up Linux console... OK
+Jul 02 03:39:14 +02:00 sel-melc  Starting system log daemon... OK
+Jul 02 03:39:14 +02:00 sel-melc  Starting kernel log daemon... OK
+Jul 02 03:39:14 +02:00 sel-melc  Bringing up the enp0s3 interface... OK
+Jul 02 03:39:14 +02:00 sel-melc  Adding IPv4 address 192.168.1.2 to the enp0s3 interface... OK
+Jul 02 03:39:14 +02:00 sel-melc  Adding default gateway 192.168.1.1 to the enp0s3 interface... OK
+Jul 02 03:39:14 +02:00 sel-melc  Starting SSH Server... OK
+Jul 02 03:39:15 +02:00 sel-melc  Starting GPM console mouse service... OK
+----
+KERNEL LOGS
+----
+Jul  2 03:38:45 sel-melc kernel: Kernel logging (proc) stopped.
+Jul  2 03:38:45 sel-melc kernel: Kernel log daemon terminating.
+Jul  2 03:39:14 sel-melc kernel: klogd 1.5.1, log source = /proc/kmsg started.
+Jul  2 03:39:14 sel-melc kernel: Cannot find map file.
+Jul  2 03:39:14 sel-melc kernel: Loaded 130245 symbols from 1 module.
+Jul  2 03:39:14 sel-melc kernel: [    0.000000] Linux version 5.19.0-rc4sel-melc-00187-g089866061428 (root@sel-melc) (gcc (GCC) 11.2.0, GNU ld (GNU Binutils) 2.38) #1 SMP PREEMPT_DYNAMIC Sat Jul 2 03:22:01 CEST 2022
+Jul  2 03:39:14 sel-melc kernel: [    0.000000] Command line: BOOT_IMAGE=/vmlinuz-5.16.9-lfs-11.1-sel-melc root=/dev/sda3 ro
+Jul  2 03:39:14 sel-melc kernel: [    0.000000] x86/fpu: x87 FPU will use FXSAVE
+Jul  2 03:39:14 sel-melc kernel: [    0.000000] signal: max sigframe size: 1440
+Jul  2 03:39:14 sel-melc kernel: [    0.000000] BIOS-provided physical RAM map:
+Jul  2 03:39:14 sel-melc kernel: [    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+Jul  2 03:39:14 sel-melc kernel: [    0.000000] BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+Jul  2 03:39:14 sel-melc kernel: [    0.000000] BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+Jul  2 03:39:14 sel-melc kernel: [    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000dffeffff] usable
+Jul  2 03:39:14 sel-melc kernel: [    0.000000] BIOS-e820: [mem 0x00000000dfff0000-0x00000000dfffffff] ACPI data
+Jul  2 03:39:14 sel-melc kernel: [    0.000000] BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+Jul  2 03:39:14 sel-melc kernel: [    0.000000] BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+Jul  2 03:39:14 sel-melc kernel: [    0.000000] BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+Jul  2 03:39:14 sel-melc kernel: [    0.000000] BIOS-e820: [mem 0x0000000100000000-0x000000021fffffff] usable
+Jul  2 03:39:14 sel-melc kernel: [    0.000000] NX (Execute Disable) protection: active
+Jul  2 03:39:14 sel-melc kernel: [    0.000000] SMBIOS 2.5 present.
+Jul  2 03:39:14 sel-melc kernel: [    0.000000] DMI: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Jul  2 03:39:14 sel-melc kernel: [    0.000000] Hypervisor detected: KVM
+Jul  2 03:39:14 sel-melc kernel: [    0.000000] kvm-clock: Using msrs 4b564d01 and 4b564d00
+Jul  2 03:39:14 sel-melc kernel: [    0.000001] kvm-clock: using sched offset of 5031445791499 cycles
+Jul  2 03:39:14 sel-melc kernel: [    0.000003] clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+Jul  2 03:39:14 sel-melc kernel: [    0.000005] tsc: Detected 3407.998 MHz processor
+Jul  2 03:39:14 sel-melc kernel: [    0.001790] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Jul  2 03:39:14 sel-melc kernel: [    0.001792] e820: remove [mem 0x000a0000-0x000fffff] usable
+Jul  2 03:39:14 sel-melc kernel: [    0.001795] last_pfn = 0x220000 max_arch_pfn = 0x400000000
+Jul  2 03:39:14 sel-melc kernel: [    0.001848] Disabled
+Jul  2 03:39:14 sel-melc kernel: [    0.001849] x86/PAT: MTRRs disabled, skipping PAT initialization too.
+Jul  2 03:39:14 sel-melc kernel: [    0.001854] CPU MTRRs all blank - virtualized system.
+Jul  2 03:39:14 sel-melc kernel: [    0.001855] x86/PAT: Configuration [0-7]: WB  WT  UC- UC  WB  WT  UC- UC  
+Jul  2 03:39:14 sel-melc kernel: [    0.001856] last_pfn = 0xdfff0 max_arch_pfn = 0x400000000
+Jul  2 03:39:14 sel-melc kernel: [    0.001897] found SMP MP-table at [mem 0x0009fff0-0x0009ffff]
+Jul  2 03:39:14 sel-melc kernel: [    0.002228] ACPI: Early table checksum verification disabled
+Jul  2 03:39:14 sel-melc kernel: [    0.002231] ACPI: RSDP 0x00000000000E0000 000024 (v02 VBOX  )
+Jul  2 03:39:14 sel-melc kernel: [    0.002234] ACPI: XSDT 0x00000000DFFF0030 00003C (v01 VBOX   VBOXXSDT 00000001 ASL  00000061)
+Jul  2 03:39:14 sel-melc kernel: [    0.002238] ACPI: FACP 0x00000000DFFF00F0 0000F4 (v04 VBOX   VBOXFACP 00000001 ASL  00000061)
+Jul  2 03:39:14 sel-melc kernel: [    0.002242] ACPI: DSDT 0x00000000DFFF0480 002325 (v02 VBOX   VBOXBIOS 00000002 INTL 20100528)
+Jul  2 03:39:14 sel-melc kernel: [    0.002245] ACPI: FACS 0x00000000DFFF0200 000040
+Jul  2 03:39:14 sel-melc kernel: [    0.002247] ACPI: FACS 0x00000000DFFF0200 000040
+Jul  2 03:39:14 sel-melc kernel: [    0.002249] ACPI: APIC 0x00000000DFFF0240 000064 (v02 VBOX   VBOXAPIC 00000001 ASL  00000061)
+Jul  2 03:39:14 sel-melc kernel: [    0.002252] ACPI: SSDT 0x00000000DFFF02B0 0001CC (v01 VBOX   VBOXCPUT 00000002 INTL 20100528)
+Jul  2 03:39:14 sel-melc kernel: [    0.002253] ACPI: Reserving FACP table memory at [mem 0xdfff00f0-0xdfff01e3]
+Jul  2 03:39:14 sel-melc kernel: [    0.002255] ACPI: Reserving DSDT table memory at [mem 0xdfff0480-0xdfff27a4]
+Jul  2 03:39:14 sel-melc kernel: [    0.002255] ACPI: Reserving FACS table memory at [mem 0xdfff0200-0xdfff023f]
+Jul  2 03:39:14 sel-melc kernel: [    0.002256] ACPI: Reserving FACS table memory at [mem 0xdfff0200-0xdfff023f]
+Jul  2 03:39:14 sel-melc kernel: [    0.002256] ACPI: Reserving APIC table memory at [mem 0xdfff0240-0xdfff02a3]
+Jul  2 03:39:14 sel-melc kernel: [    0.002257] ACPI: Reserving SSDT table memory at [mem 0xdfff02b0-0xdfff047b]
+Jul  2 03:39:14 sel-melc kernel: [    0.003648] No NUMA configuration found
+Jul  2 03:39:14 sel-melc kernel: [    0.003649] Faking a node at [mem 0x0000000000000000-0x000000021fffffff]
+Jul  2 03:39:14 sel-melc kernel: [    0.003652] NODE_DATA(0) allocated [mem 0x21fff8000-0x21fffbfff]
+Jul  2 03:39:14 sel-melc kernel: [    0.004283] Zone ranges:
+Jul  2 03:39:14 sel-melc kernel: [    0.004283]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Jul  2 03:39:14 sel-melc kernel: [    0.004285]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Jul  2 03:39:14 sel-melc kernel: [    0.004286]   Normal   [mem 0x0000000100000000-0x000000021fffffff]
+Jul  2 03:39:14 sel-melc kernel: [    0.004287] Movable zone start for each node
+Jul  2 03:39:14 sel-melc kernel: [    0.004287] Early memory node ranges
+Jul  2 03:39:14 sel-melc kernel: [    0.004288]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+Jul  2 03:39:14 sel-melc kernel: [    0.004289]   node   0: [mem 0x0000000000100000-0x00000000dffeffff]
+Jul  2 03:39:14 sel-melc kernel: [    0.004289]   node   0: [mem 0x0000000100000000-0x000000021fffffff]
+Jul  2 03:39:14 sel-melc kernel: [    0.004291] Initmem setup node 0 [mem 0x0000000000001000-0x000000021fffffff]
+Jul  2 03:39:14 sel-melc kernel: [    0.004448] On node 0, zone DMA: 1 pages in unavailable ranges
+Jul  2 03:39:14 sel-melc kernel: [    0.007844] On node 0, zone DMA: 97 pages in unavailable ranges
+Jul  2 03:39:14 sel-melc kernel: [    1.821241] On node 0, zone Normal: 16 pages in unavailable ranges
+Jul  2 03:39:14 sel-melc kernel: [    1.823873] ACPI: PM-Timer IO Port: 0x4008
+Jul  2 03:39:14 sel-melc kernel: [    1.824307] IOAPIC[0]: apic_id 3, version 32, address 0xfec00000, GSI 0-23
+Jul  2 03:39:14 sel-melc kernel: [    1.824311] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Jul  2 03:39:14 sel-melc kernel: [    1.824312] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 low level)
+Jul  2 03:39:14 sel-melc kernel: [    1.824316] ACPI: Using ACPI (MADT) for SMP configuration information
+Jul  2 03:39:14 sel-melc kernel: [    1.824354] smpboot: Allowing 3 CPUs, 0 hotplug CPUs
+Jul  2 03:39:14 sel-melc kernel: [    1.824536] PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Jul  2 03:39:14 sel-melc kernel: [    1.824538] PM: hibernation: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+Jul  2 03:39:14 sel-melc kernel: [    1.824539] PM: hibernation: Registered nosave memory: [mem 0x000a0000-0x000effff]
+Jul  2 03:39:14 sel-melc kernel: [    1.824539] PM: hibernation: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+Jul  2 03:39:14 sel-melc kernel: [    1.824540] PM: hibernation: Registered nosave memory: [mem 0xdfff0000-0xdfffffff]
+Jul  2 03:39:14 sel-melc kernel: [    1.824540] PM: hibernation: Registered nosave memory: [mem 0xe0000000-0xfebfffff]
+Jul  2 03:39:14 sel-melc kernel: [    1.824541] PM: hibernation: Registered nosave memory: [mem 0xfec00000-0xfec00fff]
+Jul  2 03:39:14 sel-melc kernel: [    1.824541] PM: hibernation: Registered nosave memory: [mem 0xfec01000-0xfedfffff]
+Jul  2 03:39:14 sel-melc kernel: [    1.824542] PM: hibernation: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+Jul  2 03:39:14 sel-melc kernel: [    1.824542] PM: hibernation: Registered nosave memory: [mem 0xfee01000-0xfffbffff]
+Jul  2 03:39:14 sel-melc kernel: [    1.824543] PM: hibernation: Registered nosave memory: [mem 0xfffc0000-0xffffffff]
+Jul  2 03:39:14 sel-melc kernel: [    1.824544] [mem 0xe0000000-0xfebfffff] available for PCI devices
+Jul  2 03:39:14 sel-melc kernel: [    1.824545] Booting paravirtualized kernel on KVM
+Jul  2 03:39:14 sel-melc kernel: [    1.824546] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+Jul  2 03:39:14 sel-melc kernel: [    1.828848] setup_percpu: NR_CPUS:64 nr_cpumask_bits:64 nr_cpu_ids:3 nr_node_ids:1
+Jul  2 03:39:14 sel-melc kernel: [    1.856721] percpu: Embedded 52 pages/cpu s176040 r8192 d28760 u524288
+Jul  2 03:39:14 sel-melc kernel: [    1.856726] pcpu-alloc: s176040 r8192 d28760 u524288 alloc=1*2097152
+Jul  2 03:39:14 sel-melc kernel: [    1.856728] pcpu-alloc: [0] 0 1 2 - 
+Jul  2 03:39:14 sel-melc kernel: [    1.856833] Fallback order for Node 0: 0 
+Jul  2 03:39:14 sel-melc kernel: [    1.856835] Built 1 zonelists, mobility grouping on.  Total pages: 2064112
+Jul  2 03:39:14 sel-melc kernel: [    1.856836] Policy zone: Normal
+Jul  2 03:39:14 sel-melc kernel: [    1.856837] Kernel command line: BOOT_IMAGE=/vmlinuz-5.16.9-lfs-11.1-sel-melc root=/dev/sda3 ro
+Jul  2 03:39:14 sel-melc kernel: [    1.856853] Unknown kernel command line parameters "BOOT_IMAGE=/vmlinuz-5.16.9-lfs-11.1-sel-melc", will be passed to user space.
+Jul  2 03:39:14 sel-melc kernel: [    1.968252] Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+Jul  2 03:39:14 sel-melc kernel: [    2.025294] Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+Jul  2 03:39:14 sel-melc kernel: [    2.025401] mem auto-init: stack:off, heap alloc:off, heap free:off
+Jul  2 03:39:14 sel-melc kernel: [    2.768296] Memory: 8142004K/8388152K available (16396K kernel code, 2657K rwdata, 5200K rodata, 1280K init, 1172K bss, 245888K reserved, 0K cma-reserved)
+Jul  2 03:39:14 sel-melc kernel: [    2.768587] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=3, Nodes=1
+Jul  2 03:39:14 sel-melc kernel: [    2.768746] Kernel/User page tables isolation: enabled
+Jul  2 03:39:14 sel-melc kernel: [    2.772647] Dynamic Preempt: voluntary
+Jul  2 03:39:14 sel-melc kernel: [    2.773217] rcu: Preemptible hierarchical RCU implementation.
+Jul  2 03:39:14 sel-melc kernel: [    2.773218] rcu: ^IRCU event tracing is enabled.
+Jul  2 03:39:14 sel-melc kernel: [    2.773218] rcu: ^IRCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=3.
+Jul  2 03:39:14 sel-melc kernel: [    2.773219] ^ITrampoline variant of Tasks RCU enabled.
+Jul  2 03:39:14 sel-melc kernel: [    2.773220] rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+Jul  2 03:39:14 sel-melc kernel: [    2.773235] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=3
+Jul  2 03:39:14 sel-melc kernel: [    2.779524] NR_IRQS: 4352, nr_irqs: 448, preallocated irqs: 16
+Jul  2 03:39:14 sel-melc kernel: [    2.780133] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+Jul  2 03:39:14 sel-melc kernel: [    2.838447] Console: colour VGA+ 80x25
+Jul  2 03:39:14 sel-melc kernel: [    3.184001] printk: console [tty0] enabled
+Jul  2 03:39:14 sel-melc kernel: [    3.186225] ACPI: Core revision 20220331
+Jul  2 03:39:14 sel-melc kernel: [    3.188817] APIC: Switch to symmetric I/O mode setup
+Jul  2 03:39:14 sel-melc kernel: [    3.207106] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+Jul  2 03:39:14 sel-melc kernel: [    3.210370] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x311fd208cfc, max_idle_ns: 440795283699 ns
+Jul  2 03:39:14 sel-melc kernel: [    3.215697] Calibrating delay loop (skipped) preset value.. 6815.99 BogoMIPS (lpj=3407998)
+Jul  2 03:39:14 sel-melc kernel: [    3.216693] pid_max: default: 32768 minimum: 301
+Jul  2 03:39:14 sel-melc kernel: [    3.216693] LSM: Security Framework initializing
+Jul  2 03:39:14 sel-melc kernel: [    3.216693] SELinux:  Initializing.
+Jul  2 03:39:14 sel-melc kernel: [    3.216693] Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Jul  2 03:39:14 sel-melc kernel: [    3.218067] Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Jul  2 03:39:14 sel-melc kernel: [    3.222154] Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+Jul  2 03:39:14 sel-melc kernel: [    3.222694] Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+Jul  2 03:39:14 sel-melc kernel: [    3.223698] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Jul  2 03:39:14 sel-melc kernel: [    3.224696] Spectre V2 : Mitigation: Retpolines
+Jul  2 03:39:14 sel-melc kernel: [    3.225694] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+Jul  2 03:39:14 sel-melc kernel: [    3.227694] Speculative Store Bypass: Vulnerable
+Jul  2 03:39:14 sel-melc kernel: [    3.228741] MDS: Mitigation: Clear CPU buffers
+Jul  2 03:39:14 sel-melc kernel: [    3.229694] MMIO Stale Data: Mitigation: Clear CPU buffers
+Jul  2 03:39:14 sel-melc kernel: [    3.232146] Freeing SMP alternatives memory: 44K
+Jul  2 03:39:14 sel-melc kernel: [    3.347894] APIC calibration not consistent with PM-Timer: 132ms instead of 100ms
+Jul  2 03:39:14 sel-melc kernel: [    3.348693] APIC delta adjusted to PM-Timer: 6295668 (8326863)
+Jul  2 03:39:14 sel-melc kernel: [    3.349074] smpboot: CPU0: Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz (family: 0x6, model: 0x5e, stepping: 0x3)
+Jul  2 03:39:14 sel-melc kernel: [    3.351213] cblist_init_generic: Setting adjustable number of callback queues.
+Jul  2 03:39:14 sel-melc kernel: [    3.351694] cblist_init_generic: Setting shift to 2 and lim to 1.
+Jul  2 03:39:14 sel-melc kernel: [    3.353787] Performance Events: unsupported p6 CPU model 94 no PMU driver, software events only.
+Jul  2 03:39:14 sel-melc kernel: [    3.354803] rcu: Hierarchical SRCU implementation.
+Jul  2 03:39:14 sel-melc kernel: [    3.357296] smp: Bringing up secondary CPUs ...
+Jul  2 03:39:14 sel-melc kernel: [    3.358316] x86: Booting SMP configuration:
+Jul  2 03:39:14 sel-melc kernel: [    3.358695] .... node  #0, CPUs:      #1
+Jul  2 03:39:14 sel-melc kernel: [    3.362693] TSC synchronization [CPU#0 -> CPU#1]:
+Jul  2 03:39:14 sel-melc kernel: [    3.362693] Measured 163668 cycles TSC warp between CPUs, turning off TSC clock.
+Jul  2 03:39:14 sel-melc kernel: [    3.362693] tsc: Marking TSC unstable due to check_tsc_sync_source failed
+Jul  2 03:39:14 sel-melc kernel: [    3.365265]  #2
+Jul  2 03:39:14 sel-melc kernel: [    3.372287] smp: Brought up 1 node, 3 CPUs
+Jul  2 03:39:14 sel-melc kernel: [    3.373695] smpboot: Max logical packages: 1
+Jul  2 03:39:14 sel-melc kernel: [    3.374695] smpboot: Total of 3 processors activated (20447.98 BogoMIPS)
+Jul  2 03:39:14 sel-melc kernel: [    3.378825] devtmpfs: initialized
+Jul  2 03:39:14 sel-melc kernel: [    3.380994] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+Jul  2 03:39:14 sel-melc kernel: [    3.381697] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+Jul  2 03:39:14 sel-melc kernel: [    3.384145] PM: RTC time: 01:39:05, date: 2022-07-02
+Jul  2 03:39:14 sel-melc kernel: [    3.386033] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Jul  2 03:39:14 sel-melc kernel: [    3.386854] audit: initializing netlink subsys (disabled)
+Jul  2 03:39:14 sel-melc kernel: [    3.388822] audit: type=2000 audit(1656730981.551:1): state=initialized audit_enabled=0 res=1
+Jul  2 03:39:14 sel-melc kernel: [    3.389877] thermal_sys: Registered thermal governor 'step_wise'
+Jul  2 03:39:14 sel-melc kernel: [    3.390695] thermal_sys: Registered thermal governor 'user_space'
+Jul  2 03:39:14 sel-melc kernel: [    3.392739] cpuidle: using governor menu
+Jul  2 03:39:14 sel-melc kernel: [    3.395181] PCI: Using configuration type 1 for base access
+Jul  2 03:39:14 sel-melc kernel: [    3.399251] kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+Jul  2 03:39:14 sel-melc kernel: [    3.402849] HugeTLB: can optimize 7 vmemmap pages for hugepages-2048kB
+Jul  2 03:39:14 sel-melc kernel: [    3.403698] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+Jul  2 03:39:14 sel-melc kernel: [    3.406113] ACPI: Added _OSI(Module Device)
+Jul  2 03:39:14 sel-melc kernel: [    3.406695] ACPI: Added _OSI(Processor Device)
+Jul  2 03:39:14 sel-melc kernel: [    3.407695] ACPI: Added _OSI(3.0 _SCP Extensions)
+Jul  2 03:39:14 sel-melc kernel: [    3.408696] ACPI: Added _OSI(Processor Aggregator Device)
+Jul  2 03:39:14 sel-melc kernel: [    3.409696] ACPI: Added _OSI(Linux-Dell-Video)
+Jul  2 03:39:14 sel-melc kernel: [    3.410696] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+Jul  2 03:39:14 sel-melc kernel: [    3.411696] ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+Jul  2 03:39:14 sel-melc kernel: [    3.415307] ACPI: 2 ACPI AML tables successfully acquired and loaded
+Jul  2 03:39:14 sel-melc kernel: [    3.470781] ACPI: Interpreter enabled
+Jul  2 03:39:14 sel-melc kernel: [    3.471704] ACPI: PM: (supports S0 S5)
+Jul  2 03:39:14 sel-melc kernel: [    3.472695] ACPI: Using IOAPIC for interrupt routing
+Jul  2 03:39:14 sel-melc kernel: [    3.474985] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Jul  2 03:39:14 sel-melc kernel: [    3.475695] PCI: Using E820 reservations for host bridge windows
+Jul  2 03:39:14 sel-melc kernel: [    3.476836] ACPI: Enabled 2 GPEs in block 00 to 07
+Jul  2 03:39:14 sel-melc kernel: [    3.486029] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+Jul  2 03:39:14 sel-melc kernel: [    3.486699] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI HPX-Type3]
+Jul  2 03:39:14 sel-melc kernel: [    3.487696] acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+Jul  2 03:39:14 sel-melc kernel: [    3.490243] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+Jul  2 03:39:14 sel-melc kernel: [    3.491761] PCI host bridge to bus 0000:00
+Jul  2 03:39:14 sel-melc kernel: [    3.492696] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Jul  2 03:39:14 sel-melc kernel: [    3.493695] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Jul  2 03:39:14 sel-melc kernel: [    3.494695] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Jul  2 03:39:14 sel-melc kernel: [    3.495695] pci_bus 0000:00: root bus resource [mem 0xe0000000-0xfdffffff window]
+Jul  2 03:39:14 sel-melc kernel: [    3.496697] pci_bus 0000:00: root bus resource [bus 00-ff]
+Jul  2 03:39:14 sel-melc kernel: [    3.499080] pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+Jul  2 03:39:14 sel-melc kernel: [    3.502361] pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+Jul  2 03:39:14 sel-melc kernel: [    3.507223] pci 0000:00:01.1: [8086:7111] type 00 class 0x01018a
+Jul  2 03:39:14 sel-melc kernel: [    3.509693] pci 0000:00:01.1: reg 0x20: [io  0xd000-0xd00f]
+Jul  2 03:39:14 sel-melc kernel: [    3.510962] pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+Jul  2 03:39:14 sel-melc kernel: [    3.511695] pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+Jul  2 03:39:14 sel-melc kernel: [    3.512695] pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+Jul  2 03:39:14 sel-melc kernel: [    3.513695] pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+Jul  2 03:39:14 sel-melc kernel: [    3.516451] pci 0000:00:02.0: [15ad:0405] type 00 class 0x030000
+Jul  2 03:39:14 sel-melc kernel: [    3.517693] pci 0000:00:02.0: reg 0x10: [io  0xd010-0xd01f]
+Jul  2 03:39:14 sel-melc kernel: [    3.518693] pci 0000:00:02.0: reg 0x14: [mem 0xe0000000-0xe0ffffff pref]
+Jul  2 03:39:14 sel-melc kernel: [    3.520693] pci 0000:00:02.0: reg 0x18: [mem 0xf0000000-0xf01fffff]
+Jul  2 03:39:14 sel-melc kernel: [    3.524693] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+Jul  2 03:39:14 sel-melc kernel: [    3.525967] pci 0000:00:03.0: [8086:100e] type 00 class 0x020000
+Jul  2 03:39:14 sel-melc kernel: [    3.527829] pci 0000:00:03.0: reg 0x10: [mem 0xf0200000-0xf021ffff]
+Jul  2 03:39:14 sel-melc kernel: [    3.530027] pci 0000:00:03.0: reg 0x18: [io  0xd020-0xd027]
+Jul  2 03:39:14 sel-melc kernel: [    3.534420] pci 0000:00:04.0: [80ee:cafe] type 00 class 0x088000
+Jul  2 03:39:14 sel-melc kernel: [    3.535789] pci 0000:00:04.0: reg 0x10: [io  0xd040-0xd05f]
+Jul  2 03:39:14 sel-melc kernel: [    3.536999] pci 0000:00:04.0: reg 0x14: [mem 0xf0400000-0xf07fffff]
+Jul  2 03:39:14 sel-melc kernel: [    3.538999] pci 0000:00:04.0: reg 0x18: [mem 0xf0800000-0xf0803fff pref]
+Jul  2 03:39:14 sel-melc kernel: [    3.542748] pci 0000:00:05.0: [8086:2415] type 00 class 0x040100
+Jul  2 03:39:14 sel-melc kernel: [    3.544977] pci 0000:00:05.0: reg 0x10: [io  0xd100-0xd1ff]
+Jul  2 03:39:14 sel-melc kernel: [    3.546021] pci 0000:00:05.0: reg 0x14: [io  0xd200-0xd23f]
+Jul  2 03:39:14 sel-melc kernel: [    3.550202] pci 0000:00:06.0: [106b:003f] type 00 class 0x0c0310
+Jul  2 03:39:14 sel-melc kernel: [    3.552074] pci 0000:00:06.0: reg 0x10: [mem 0xf0804000-0xf0804fff]
+Jul  2 03:39:14 sel-melc kernel: [    3.556693] pci 0000:00:07.0: [8086:7113] type 00 class 0x068000
+Jul  2 03:39:14 sel-melc kernel: [    3.559696] pci 0000:00:07.0: quirk: [io  0x4000-0x403f] claimed by PIIX4 ACPI
+Jul  2 03:39:14 sel-melc kernel: [    3.560751] pci 0000:00:07.0: quirk: [io  0x4100-0x410f] claimed by PIIX4 SMB
+Jul  2 03:39:14 sel-melc kernel: [    3.563813] pci 0000:00:0b.0: [8086:265c] type 00 class 0x0c0320
+Jul  2 03:39:14 sel-melc kernel: [    3.565695] pci 0000:00:0b.0: reg 0x10: [mem 0xf0805000-0xf0805fff]
+Jul  2 03:39:14 sel-melc kernel: [    3.570941] pci 0000:00:0d.0: [8086:2829] type 00 class 0x010601
+Jul  2 03:39:14 sel-melc kernel: [    3.572738] pci 0000:00:0d.0: reg 0x10: [io  0xd240-0xd247]
+Jul  2 03:39:14 sel-melc kernel: [    3.573997] pci 0000:00:0d.0: reg 0x14: [io  0xd248-0xd24b]
+Jul  2 03:39:14 sel-melc kernel: [    3.574980] pci 0000:00:0d.0: reg 0x18: [io  0xd250-0xd257]
+Jul  2 03:39:14 sel-melc kernel: [    3.576014] pci 0000:00:0d.0: reg 0x1c: [io  0xd258-0xd25b]
+Jul  2 03:39:14 sel-melc kernel: [    3.576984] pci 0000:00:0d.0: reg 0x20: [io  0xd260-0xd26f]
+Jul  2 03:39:14 sel-melc kernel: [    3.578026] pci 0000:00:0d.0: reg 0x24: [mem 0xf0806000-0xf0807fff]
+Jul  2 03:39:14 sel-melc kernel: [    3.584268] ACPI: PCI: Interrupt link LNKA configured for IRQ 11
+Jul  2 03:39:14 sel-melc kernel: [    3.586123] ACPI: PCI: Interrupt link LNKB configured for IRQ 10
+Jul  2 03:39:14 sel-melc kernel: [    3.587835] ACPI: PCI: Interrupt link LNKC configured for IRQ 9
+Jul  2 03:39:14 sel-melc kernel: [    3.588892] ACPI: PCI: Interrupt link LNKD configured for IRQ 11
+Jul  2 03:39:14 sel-melc kernel: [    3.589923] iommu: Default domain type: Translated 
+Jul  2 03:39:14 sel-melc kernel: [    3.590695] iommu: DMA domain TLB invalidation policy: lazy mode 
+Jul  2 03:39:14 sel-melc kernel: [    3.591844] SCSI subsystem initialized
+Jul  2 03:39:14 sel-melc kernel: [    3.593853] libata version 3.00 loaded.
+Jul  2 03:39:14 sel-melc kernel: [    3.594145] ACPI: bus type USB registered
+Jul  2 03:39:14 sel-melc kernel: [    3.594709] usbcore: registered new interface driver usbfs
+Jul  2 03:39:14 sel-melc kernel: [    3.595754] usbcore: registered new interface driver hub
+Jul  2 03:39:14 sel-melc kernel: [    3.596708] usbcore: registered new device driver usb
+Jul  2 03:39:14 sel-melc kernel: [    3.597737] pps_core: LinuxPPS API ver. 1 registered
+Jul  2 03:39:14 sel-melc kernel: [    3.598694] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Jul  2 03:39:14 sel-melc kernel: [    3.599700] PTP clock support registered
+Jul  2 03:39:14 sel-melc kernel: [    3.601907] Advanced Linux Sound Architecture Driver Initialized.
+Jul  2 03:39:14 sel-melc kernel: [    3.602935] NetLabel: Initializing
+Jul  2 03:39:14 sel-melc kernel: [    3.604695] NetLabel:  domain hash size = 128
+Jul  2 03:39:14 sel-melc kernel: [    3.605695] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Jul  2 03:39:14 sel-melc kernel: [    3.606708] NetLabel:  unlabeled traffic allowed by default
+Jul  2 03:39:14 sel-melc kernel: [    3.608928] PCI: Using ACPI for IRQ routing
+Jul  2 03:39:14 sel-melc kernel: [    3.609698] PCI: pci_cache_line_size set to 64 bytes
+Jul  2 03:39:14 sel-melc kernel: [    3.610931] e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+Jul  2 03:39:14 sel-melc kernel: [    3.610934] e820: reserve RAM buffer [mem 0xdfff0000-0xdfffffff]
+Jul  2 03:39:14 sel-melc kernel: [    3.611068] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+Jul  2 03:39:14 sel-melc kernel: [    3.611693] pci 0000:00:02.0: vgaarb: bridge control possible
+Jul  2 03:39:14 sel-melc kernel: [    3.611693] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+Jul  2 03:39:14 sel-melc kernel: [    3.611696] vgaarb: loaded
+Jul  2 03:39:14 sel-melc kernel: [    3.613978] clocksource: Switched to clocksource kvm-clock
+Jul  2 03:39:14 sel-melc kernel: [    3.620759] VFS: Disk quotas dquot_6.6.0
+Jul  2 03:39:14 sel-melc kernel: [    3.623718] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Jul  2 03:39:14 sel-melc kernel: [    3.628434] pnp: PnP ACPI init
+Jul  2 03:39:14 sel-melc kernel: [    3.634060] pnp: PnP ACPI: found 2 devices
+Jul  2 03:39:14 sel-melc kernel: [    3.666579] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Jul  2 03:39:14 sel-melc kernel: [    3.672511] NET: Registered PF_INET protocol family
+Jul  2 03:39:14 sel-melc kernel: [    3.685359] IP idents hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Jul  2 03:39:14 sel-melc kernel: [    3.693596] tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, linear)
+Jul  2 03:39:14 sel-melc kernel: [    3.699639] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Jul  2 03:39:14 sel-melc kernel: [    3.703836] TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)
+Jul  2 03:39:14 sel-melc kernel: [    3.704794] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes, linear)
+Jul  2 03:39:14 sel-melc kernel: [    3.704794] TCP: Hash tables configured (established 65536 bind 65536)
+Jul  2 03:39:14 sel-melc kernel: [    3.704794] UDP hash table entries: 4096 (order: 5, 131072 bytes, linear)
+Jul  2 03:39:14 sel-melc kernel: [    3.704794] UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes, linear)
+Jul  2 03:39:14 sel-melc kernel: [    3.731049] NET: Registered PF_UNIX/PF_LOCAL protocol family
+Jul  2 03:39:14 sel-melc kernel: [    3.738184] RPC: Registered named UNIX socket transport module.
+Jul  2 03:39:14 sel-melc kernel: [    3.741515] RPC: Registered udp transport module.
+Jul  2 03:39:14 sel-melc kernel: [    3.742364] RPC: Registered tcp transport module.
+Jul  2 03:39:14 sel-melc kernel: [    3.742364] RPC: Registered tcp NFSv4.1 backchannel transport module.
+Jul  2 03:39:14 sel-melc kernel: [    3.751954] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Jul  2 03:39:14 sel-melc kernel: [    3.754863] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Jul  2 03:39:14 sel-melc kernel: [    3.755824] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Jul  2 03:39:14 sel-melc kernel: [    3.755824] pci_bus 0000:00: resource 7 [mem 0xe0000000-0xfdffffff window]
+Jul  2 03:39:14 sel-melc kernel: [    3.755824] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+Jul  2 03:39:14 sel-melc kernel: [    3.755824] pci 0000:00:01.0: Activating ISA DMA hang workarounds
+Jul  2 03:39:14 sel-melc kernel: [    3.755824] PCI: CLS 0 bytes, default 64
+Jul  2 03:39:14 sel-melc kernel: [    3.755824] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+Jul  2 03:39:14 sel-melc kernel: [    3.779784] software IO TLB: mapped [mem 0x00000000dbff0000-0x00000000dfff0000] (64MB)
+Jul  2 03:39:14 sel-melc kernel: [    3.791202] RAPL PMU: API unit is 2^-32 Joules, 0 fixed counters, 10737418240 ms ovfl timer
+Jul  2 03:39:14 sel-melc kernel: [    3.791882] platform rtc_cmos: registered platform RTC device (no PNP device found)
+Jul  2 03:39:14 sel-melc kernel: [    3.808401] Initialise system trusted keyrings
+Jul  2 03:39:14 sel-melc kernel: [    3.812175] workingset: timestamp_bits=56 max_order=21 bucket_order=0
+Jul  2 03:39:14 sel-melc kernel: [    3.821350] NFS: Registering the id_resolver key type
+Jul  2 03:39:14 sel-melc kernel: [    3.821727] Key type id_resolver registered
+Jul  2 03:39:14 sel-melc kernel: [    3.821727] Key type id_legacy registered
+Jul  2 03:39:14 sel-melc kernel: [    3.821727] 9p: Installing v9fs 9p2000 file system support
+Jul  2 03:39:14 sel-melc kernel: [    3.837904] Key type asymmetric registered
+Jul  2 03:39:14 sel-melc kernel: [    3.837904] Asymmetric key parser 'x509' registered
+Jul  2 03:39:14 sel-melc kernel: [    3.837904] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+Jul  2 03:39:14 sel-melc kernel: [    3.837904] io scheduler mq-deadline registered
+Jul  2 03:39:14 sel-melc kernel: [    3.837904] io scheduler kyber registered
+Jul  2 03:39:14 sel-melc kernel: [    3.861082] ACPI: AC: AC Adapter [AC] (on-line)
+Jul  2 03:39:14 sel-melc kernel: [    3.863692] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+Jul  2 03:39:14 sel-melc kernel: [    3.864373] ACPI: button: Power Button [PWRF]
+Jul  2 03:39:14 sel-melc kernel: [    3.864373] input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+Jul  2 03:39:14 sel-melc kernel: [    3.864373] ACPI: button: Sleep Button [SLPF]
+Jul  2 03:39:14 sel-melc kernel: [    3.864373] ACPI: video: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+Jul  2 03:39:14 sel-melc kernel: [    3.864373] input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/LNXVIDEO:00/input/input2
+Jul  2 03:39:14 sel-melc kernel: [    3.884807] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+Jul  2 03:39:14 sel-melc kernel: [    3.888973] Non-volatile memory driver v1.3
+Jul  2 03:39:14 sel-melc kernel: [    3.888973] Linux agpgart interface v0.103
+Jul  2 03:39:14 sel-melc kernel: [    3.888973] ACPI: bus type drm_connector registered
+Jul  2 03:39:14 sel-melc kernel: [    3.915027] loop: module loaded
+Jul  2 03:39:14 sel-melc kernel: [    3.915414] ahci 0000:00:0d.0: version 3.0
+Jul  2 03:39:14 sel-melc kernel: [    3.918978] ahci 0000:00:0d.0: SSS flag set, parallel bus scan disabled
+Jul  2 03:39:14 sel-melc kernel: [    3.918978] ahci 0000:00:0d.0: AHCI 0001.0100 32 slots 1 ports 3 Gbps 0x1 impl SATA mode
+Jul  2 03:39:14 sel-melc kernel: [    3.918978] ahci 0000:00:0d.0: flags: 64bit ncq stag only ccc 
+Jul  2 03:39:14 sel-melc kernel: [    3.937925] scsi host0: ahci
+Jul  2 03:39:14 sel-melc kernel: [    3.940607] ata1: SATA max UDMA/133 abar m8192@0xf0806000 port 0xf0806100 irq 21
+Jul  2 03:39:14 sel-melc kernel: [    3.945316] ata_piix 0000:00:01.1: version 2.13
+Jul  2 03:39:14 sel-melc kernel: [    3.951974] scsi host1: ata_piix
+Jul  2 03:39:14 sel-melc kernel: [    3.956779] scsi host2: ata_piix
+Jul  2 03:39:14 sel-melc kernel: [    3.957487] ata2: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xd000 irq 14
+Jul  2 03:39:14 sel-melc kernel: [    3.957487] ata3: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xd008 irq 15
+Jul  2 03:39:14 sel-melc kernel: [    3.968172] e100: Intel(R) PRO/100 Network Driver
+Jul  2 03:39:14 sel-melc kernel: [    3.971388] e100: Copyright(c) 1999-2006 Intel Corporation
+Jul  2 03:39:14 sel-melc kernel: [    3.975168] e1000: Intel(R) PRO/1000 Network Driver
+Jul  2 03:39:14 sel-melc kernel: [    3.976006] e1000: Copyright (c) 1999-2006 Intel Corporation.
+Jul  2 03:39:14 sel-melc kernel: [    4.717833] e1000 0000:00:03.0 eth0: (PCI:33MHz:32-bit) 08:00:27:68:99:b7
+Jul  2 03:39:14 sel-melc kernel: [    4.717833] e1000 0000:00:03.0 eth0: Intel(R) PRO/1000 Network Connection
+Jul  2 03:39:14 sel-melc kernel: [    4.717833] e1000e: Intel(R) PRO/1000 Network Driver
+Jul  2 03:39:14 sel-melc kernel: [    4.717833] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+Jul  2 03:39:14 sel-melc kernel: [    4.737529] sky2: driver version 1.30
+Jul  2 03:39:14 sel-melc kernel: [    4.741031] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Jul  2 03:39:14 sel-melc kernel: [    4.741726] ehci-pci: EHCI PCI platform driver
+Jul  2 03:39:14 sel-melc kernel: [    4.741726] ehci-pci 0000:00:0b.0: EHCI Host Controller
+Jul  2 03:39:14 sel-melc kernel: [    4.752439] ehci-pci 0000:00:0b.0: new USB bus registered, assigned bus number 1
+Jul  2 03:39:14 sel-melc kernel: [    4.753133] ehci-pci 0000:00:0b.0: irq 19, io mem 0xf0805000
+Jul  2 03:39:14 sel-melc kernel: [    4.776836] ehci-pci 0000:00:0b.0: USB 2.0 started, EHCI 1.00
+Jul  2 03:39:14 sel-melc kernel: [    4.777507] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.19
+Jul  2 03:39:14 sel-melc kernel: [    4.777507] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Jul  2 03:39:14 sel-melc kernel: [    4.788985] usb usb1: Product: EHCI Host Controller
+Jul  2 03:39:14 sel-melc kernel: [    4.789781] usb usb1: Manufacturer: Linux 5.19.0-rc4sel-melc-00187-g089866061428 ehci_hcd
+Jul  2 03:39:14 sel-melc kernel: [    4.789781] usb usb1: SerialNumber: 0000:00:0b.0
+Jul  2 03:39:14 sel-melc kernel: [    4.800550] hub 1-0:1.0: USB hub found
+Jul  2 03:39:14 sel-melc kernel: [    4.803228] hub 1-0:1.0: 12 ports detected
+Jul  2 03:39:14 sel-melc kernel: [    4.807705] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+Jul  2 03:39:14 sel-melc kernel: [    4.811758] ohci-pci: OHCI PCI platform driver
+Jul  2 03:39:14 sel-melc kernel: [    4.812715] ohci-pci 0000:00:06.0: OHCI PCI host controller
+Jul  2 03:39:14 sel-melc kernel: [    4.820184] ohci-pci 0000:00:06.0: new USB bus registered, assigned bus number 2
+Jul  2 03:39:14 sel-melc kernel: [    4.825213] ohci-pci 0000:00:06.0: irq 22, io mem 0xf0804000
+Jul  2 03:39:14 sel-melc kernel: [    4.881953] ata2.00: ATAPI: VBOX CD-ROM, 1.0, max UDMA/133
+Jul  2 03:39:14 sel-melc kernel: [    4.884822] usb usb2: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.19
+Jul  2 03:39:14 sel-melc kernel: [    4.890033] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Jul  2 03:39:14 sel-melc kernel: [    4.894156] usb usb2: Product: OHCI PCI host controller
+Jul  2 03:39:14 sel-melc kernel: [    4.897399] usb usb2: Manufacturer: Linux 5.19.0-rc4sel-melc-00187-g089866061428 ohci_hcd
+Jul  2 03:39:14 sel-melc kernel: [    4.901912] usb usb2: SerialNumber: 0000:00:06.0
+Jul  2 03:39:14 sel-melc kernel: [    4.906099] hub 2-0:1.0: USB hub found
+Jul  2 03:39:14 sel-melc kernel: [    4.908923] hub 2-0:1.0: 12 ports detected
+Jul  2 03:39:14 sel-melc kernel: [    4.915057] uhci_hcd: USB Universal Host Controller Interface driver
+Jul  2 03:39:14 sel-melc kernel: [    4.918959] usbcore: registered new interface driver usblp
+Jul  2 03:39:14 sel-melc kernel: [    4.922493] usbcore: registered new interface driver usb-storage
+Jul  2 03:39:14 sel-melc kernel: [    4.925905] i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+Jul  2 03:39:14 sel-melc kernel: [    4.935496] serio: i8042 KBD port at 0x60,0x64 irq 1
+Jul  2 03:39:14 sel-melc kernel: [    4.938894] serio: i8042 AUX port at 0x60,0x64 irq 12
+Jul  2 03:39:14 sel-melc kernel: [    4.946417] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input3
+Jul  2 03:39:14 sel-melc kernel: [    4.949118] rtc_cmos rtc_cmos: registered as rtc0
+Jul  2 03:39:14 sel-melc kernel: [    4.950891] ata1: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+Jul  2 03:39:14 sel-melc kernel: [    4.953329] ata1.00: ATA-6: VBOX HARDDISK, 1.0, max UDMA/133
+Jul  2 03:39:14 sel-melc kernel: [    4.955343] rtc_cmos rtc_cmos: alarms up to one day, 114 bytes nvram
+Jul  2 03:39:14 sel-melc kernel: [    4.957841] fail to initialize ptp_kvm
+Jul  2 03:39:14 sel-melc kernel: [    4.959548] ata1.00: 94371840 sectors, multi 128: LBA48 NCQ (depth 32)
+Jul  2 03:39:14 sel-melc kernel: [    4.962333] device-mapper: ioctl: 4.46.0-ioctl (2022-02-22) initialised: dm-devel@redhat.com
+Jul  2 03:39:14 sel-melc kernel: [    4.962337] intel_pstate: CPU model not supported
+Jul  2 03:39:14 sel-melc kernel: [    4.962369] hid: raw HID events driver (C) Jiri Kosina
+Jul  2 03:39:14 sel-melc kernel: [    4.962586] usbcore: registered new interface driver usbhid
+Jul  2 03:39:14 sel-melc kernel: [    4.969009] ata1.00: configured for UDMA/133
+Jul  2 03:39:14 sel-melc kernel: [    4.972427] usbhid: USB HID core driver
+Jul  2 03:39:14 sel-melc kernel: [    5.008279] scsi 0:0:0:0: Direct-Access     ATA      VBOX HARDDISK    1.0  PQ: 0 ANSI: 5
+Jul  2 03:39:14 sel-melc kernel: [    5.010978] Initializing XFRM netlink socket
+Jul  2 03:39:14 sel-melc kernel: [    5.016775] NET: Registered PF_INET6 protocol family
+Jul  2 03:39:14 sel-melc kernel: [    5.017149] sd 0:0:0:0: Attached scsi generic sg0 type 0
+Jul  2 03:39:14 sel-melc kernel: [    5.017474] sd 0:0:0:0: [sda] 94371840 512-byte logical blocks: (48.3 GB/45.0 GiB)
+Jul  2 03:39:14 sel-melc kernel: [    5.017481] sd 0:0:0:0: [sda] Write Protect is off
+Jul  2 03:39:14 sel-melc kernel: [    5.017482] sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+Jul  2 03:39:14 sel-melc kernel: [    5.017489] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Jul  2 03:39:14 sel-melc kernel: [    5.017498] sd 0:0:0:0: [sda] Preferred minimum I/O size 512 bytes
+Jul  2 03:39:14 sel-melc kernel: [    5.024369] Segment Routing with IPv6
+Jul  2 03:39:14 sel-melc kernel: [    5.027199]  sda: sda1 sda2 sda3
+Jul  2 03:39:14 sel-melc kernel: [    5.029676] sd 0:0:0:0: [sda] Attached SCSI disk
+Jul  2 03:39:14 sel-melc kernel: [    5.033505] In-situ OAM (IOAM) with IPv6
+Jul  2 03:39:14 sel-melc kernel: [    5.033551] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+Jul  2 03:39:14 sel-melc kernel: [    5.034111] NET: Registered PF_PACKET protocol family
+Jul  2 03:39:14 sel-melc kernel: [    5.042726] scsi 1:0:0:0: CD-ROM            VBOX     CD-ROM           1.0  PQ: 0 ANSI: 5
+Jul  2 03:39:14 sel-melc kernel: [    5.045789] 9pnet: Installing 9P2000 support
+Jul  2 03:39:14 sel-melc kernel: [    5.071924] Key type dns_resolver registered
+Jul  2 03:39:14 sel-melc kernel: [    5.078531] IPI shorthand broadcast: enabled
+Jul  2 03:39:14 sel-melc kernel: [    5.079268] sched_clock: Marking stable (4642932532, 435335947)->(5546681993, -468413514)
+Jul  2 03:39:14 sel-melc kernel: [    5.087854] registered taskstats version 1
+Jul  2 03:39:14 sel-melc kernel: [    5.090101] Loading compiled-in X.509 certificates
+Jul  2 03:39:14 sel-melc kernel: [    5.095132] cryptomgr_test (61) used greatest stack depth: 15528 bytes left
+Jul  2 03:39:14 sel-melc kernel: [    5.100331] cryptomgr_test (63) used greatest stack depth: 15168 bytes left
+Jul  2 03:39:14 sel-melc kernel: [    5.101434] sr 1:0:0:0: [sr0] scsi3-mmc drive: 32x/32x xa/form2 tray
+Jul  2 03:39:14 sel-melc kernel: [    5.108465] cdrom: Uniform CD-ROM driver Revision: 3.20
+Jul  2 03:39:14 sel-melc kernel: [    5.129907] sr 1:0:0:0: Attached scsi CD-ROM sr0
+Jul  2 03:39:14 sel-melc kernel: [    5.130471] sr 1:0:0:0: Attached scsi generic sg1 type 5
+Jul  2 03:39:14 sel-melc kernel: [    5.137420] PM:   Magic number: 14:390:659
+Jul  2 03:39:14 sel-melc kernel: [    5.139850] printk: console [netcon0] enabled
+Jul  2 03:39:14 sel-melc kernel: [    5.142297] netconsole: network logging started
+Jul  2 03:39:14 sel-melc kernel: [    5.146371] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+Jul  2 03:39:14 sel-melc kernel: [    5.152016] kworker/u6:2 (84) used greatest stack depth: 14720 bytes left
+Jul  2 03:39:14 sel-melc kernel: [    5.159909] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+Jul  2 03:39:14 sel-melc kernel: [    5.163324] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+Jul  2 03:39:14 sel-melc kernel: [    5.163774] ALSA device list:
+Jul  2 03:39:14 sel-melc kernel: [    5.167994] cfg80211: failed to load regulatory.db
+Jul  2 03:39:14 sel-melc kernel: [    5.170444]   No soundcards found.
+Jul  2 03:39:14 sel-melc kernel: [    5.215438] usb 2-1: new full-speed USB device number 2 using ohci-pci
+Jul  2 03:39:14 sel-melc kernel: [    5.334056] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input5
+Jul  2 03:39:14 sel-melc kernel: [    5.341225] md: Waiting for all devices to be available before autodetect
+Jul  2 03:39:14 sel-melc kernel: [    5.345131] md: If you don't use raid, use raid=noautodetect
+Jul  2 03:39:14 sel-melc kernel: [    5.349219] md: Autodetecting RAID arrays.
+Jul  2 03:39:14 sel-melc kernel: [    5.351806] md: autorun ...
+Jul  2 03:39:14 sel-melc kernel: [    5.353863] md: ... autorun DONE.
+Jul  2 03:39:14 sel-melc kernel: [    5.371957] EXT4-fs (sda3): mounted filesystem with ordered data mode. Quota mode: none.
+Jul  2 03:39:14 sel-melc kernel: [    5.376533] VFS: Mounted root (ext4 filesystem) readonly on device 8:3.
+Jul  2 03:39:14 sel-melc kernel: [    5.384297] devtmpfs: mounted
+Jul  2 03:39:14 sel-melc kernel: [    5.387901] Freeing unused kernel image (initmem) memory: 1280K
+Jul  2 03:39:14 sel-melc kernel: [    5.391605] Write protecting the kernel read-only data: 24576k
+Jul  2 03:39:14 sel-melc kernel: [    5.397234] Freeing unused kernel image (text/rodata gap) memory: 2032K
+Jul  2 03:39:14 sel-melc kernel: [    5.402755] Freeing unused kernel image (rodata/data gap) memory: 944K
+Jul  2 03:39:14 sel-melc kernel: [    5.406744] Run /sbin/init as init process
+Jul  2 03:39:14 sel-melc kernel: [    5.409248]   with arguments:
+Jul  2 03:39:14 sel-melc kernel: [    5.409248]     /sbin/init
+Jul  2 03:39:14 sel-melc kernel: [    5.409249]   with environment:
+Jul  2 03:39:14 sel-melc kernel: [    5.409249]     HOME=/
+Jul  2 03:39:14 sel-melc kernel: [    5.409250]     TERM=linux
+Jul  2 03:39:14 sel-melc kernel: [    5.409250]     BOOT_IMAGE=/vmlinuz-5.16.9-lfs-11.1-sel-melc
+Jul  2 03:39:14 sel-melc kernel: [    5.485888] usb 2-1: New USB device found, idVendor=80ee, idProduct=0021, bcdDevice= 1.00
+Jul  2 03:39:14 sel-melc kernel: [    5.490138] usb 2-1: New USB device strings: Mfr=1, Product=3, SerialNumber=0
+Jul  2 03:39:14 sel-melc kernel: [    5.493740] usb 2-1: Product: USB Tablet
+Jul  2 03:39:14 sel-melc kernel: [    5.496108] usb 2-1: Manufacturer: VirtualBox
+Jul  2 03:39:14 sel-melc kernel: [    5.521481] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb2/2-1/2-1:1.0/0003:80EE:0021.0001/input/input6
+Jul  2 03:39:14 sel-melc kernel: [    5.528279] hid-generic 0003:80EE:0021.0001: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+Jul  2 03:39:14 sel-melc kernel: [    5.593277] stty (93) used greatest stack depth: 13584 bytes left
+Jul  2 03:39:14 sel-melc kernel: [    5.777267] mountpoint (118) used greatest stack depth: 13552 bytes left
+Jul  2 03:39:14 sel-melc kernel: [    5.933041] ip (145) used greatest stack depth: 13120 bytes left
+Jul  2 03:39:14 sel-melc kernel: <30>[    6.076030] udevd[170]: starting version 3.2.11
+Jul  2 03:39:14 sel-melc kernel: [    8.671332] random: crng init done
+Jul  2 03:39:14 sel-melc kernel: [    8.709322] udevd (170) used greatest stack depth: 12984 bytes left
+Jul  2 03:39:14 sel-melc kernel: <30>[    8.709568] udevd[171]: starting eudev-3.2.11
+Jul  2 03:39:14 sel-melc kernel: [    8.815305] e1000 0000:00:03.0 enp0s3: renamed from eth0
+Jul  2 03:39:14 sel-melc kernel: [   10.346045] Adding 1048572k swap on /dev/sda1.  Priority:1 extents:1 across:1048572k 
+Jul  2 03:39:14 sel-melc kernel: [   10.395536] EXT4-fs (sda3): re-mounted. Quota mode: none.
+Jul  2 03:39:14 sel-melc kernel: [   10.532586] EXT4-fs (sda3): re-mounted. Quota mode: none.
+Jul  2 03:39:14 sel-melc kernel: [   10.579949] EXT4-fs (sda2): mounting ext2 file system using the ext4 subsystem
+Jul  2 03:39:14 sel-melc kernel: [   10.589268] EXT4-fs (sda2): mounted filesystem without journal. Quota mode: none.
+Jul  2 03:39:14 sel-melc kernel: [   11.672996] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+Jul  2 03:39:14 sel-melc kernel: [   11.680869] IPv6: ADDRCONF(NETDEV_CHANGE): enp0s3: link becomes ready
+
+
+
