@@ -1,0 +1,29 @@
+From 7bef89018c65a3892996b2850a261bca98a5a52f Mon Sep 17 00:00:00 2001
+From: hsmits_and_sel-melc <fake_email@gmail.com>
+Date: Sun, 3 Jul 2022 00:32:59 +0200
+Subject: [PATCH] it's thor's kernel
+
+Changed version string to -thor_kernel.
+Signed-off-by: Realfirstname Realsurname <fake_email@gmail.com>
+
+Cc: masahiroy@kernel.org
+---
+ Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index 8973b285ce6c..6cc9dc9c10a3 100644
+--- a/Makefile
++++ b/Makefile
+@@ -2,7 +2,7 @@
+ VERSION = 5
+ PATCHLEVEL = 19
+ SUBLEVEL = 0
+-EXTRAVERSION = -rc4
++EXTRAVERSION = -thor_kernel
+ NAME = Superb Owl
+ 
+ # *DOCUMENTATION*
+-- 
+2.35.1
+
