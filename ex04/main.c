@@ -18,12 +18,14 @@ static const struct usb_device_id mod_table[2] = {
 
 MODULE_DEVICE_TABLE(usb, mod_table);
 
-static int __init main_init(void) {
+static int __init main_init(void)
+{
 	printk(KERN_INFO "A USB keyboard has been attached\n");
 	return 0;
 }
 
-static void __exit main_clean(void) {
+static void __exit main_clean(void)
+{
 	printk(KERN_INFO "Cleaning up the module\n");
 }
 
