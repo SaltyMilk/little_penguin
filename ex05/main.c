@@ -42,7 +42,7 @@ static struct file_operations fops = {
 
 static struct miscdevice misc_dev = {
 	.minor = MISC_DYNAMIC_MINOR,
-	.name = "fortytoto",
+	.name = "fortytwo",
 	.fops = &fops,
 	.mode = 0666,
 };
