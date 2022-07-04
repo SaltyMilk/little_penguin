@@ -1,0 +1,3 @@
+SUBSYSTEM=="input", SUBSYSTEMS=="usb"
+ACTION=="add", RUN+="/sbin/insmod /root/little_penguin/ex04/main.ko"
+ACTION=="remove", RUN+="/sbin/rmmod /root/little_penguin/ex04/main.ko"
