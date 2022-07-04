@@ -24,20 +24,18 @@ ssize_t myfd_read(struct file *fp,
 	size_t	length;
 
 	length = strlen(str);
-	if (length == 0) {
+	if (length == 0)
 		return 0;
-	}
 
 	tmp = kmalloc(sizeof(str), GFP_KERNEL);
 	if (tmp == NULL)
 		return -ENOMEM;
 
-	for (t = length - 1, i = 0; i < length; t--, i++) {
+	for (t = length - 1, i = 0; i < length; t--, i++)
 		tmp[i] = str[t];
-	}
 
 	tmp[i] = 0x0;
-	ret = simple_read_from_buffer(user, size, offs, tmp, length);	
+	ret = simple_read_from_buffer(user, size, offs, tmp, length);
 	kfree(tmp);
 	return ret;
 }
