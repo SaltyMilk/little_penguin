@@ -1,1 +1,1 @@
-/sources/little_penguin/linux/scripts/checkpatch.pl -f --no-tree $1
+/sources/linux-5.16.9/scripts/checkpatch.pl -f --no-tree $1
