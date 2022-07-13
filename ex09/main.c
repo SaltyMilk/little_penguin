@@ -20,7 +20,7 @@ static void *ct_seq_start(struct seq_file *s, loff_t *pos)
 {
 	if (*pos >= 1)
 		return NULL;
-	return (void*)0x1;
+	return (void *)0x1;
 }
 
 static void *ct_seq_next(struct seq_file *s, void *v, loff_t *pos)
@@ -35,14 +35,14 @@ static void ct_seq_stop(struct seq_file *s, void *v)
 static int ct_seq_show(struct seq_file *s, void *v)
 {
 	struct dentry *curdentry;
-	seq_printf(s, "root\t/\n");
 
-	list_for_each_entry(curdentry, &current->fs->root.mnt->mnt_root->d_subdirs, d_child){
+	seq_puts(s, "root\t/\n");
+	list_for_each_entry(curdentry, &current->fs->root.mnt->mnt_root->d_subdirs, d_child) {
 		if (curdentry->d_flags & DCACHE_MOUNTED)
 			seq_printf(s, "%s\t/%s\n", curdentry->d_name.name, curdentry->d_name.name);
 	}
 
-	return (0);	
+	return 0;
 }
 
 static const struct seq_operations  ct_seq_ops = {
@@ -70,7 +70,7 @@ static const struct proc_ops pops = {
 	.proc_lseek = seq_lseek,
 };
 
-static struct proc_dir_entry *mounts_file = NULL;
+static struct proc_dir_entry *mounts_file;
 
 static int __init init(void)
 {
