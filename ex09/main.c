@@ -8,11 +8,13 @@
 #include <linux/kallsyms.h>
 #include <linux/fs_struct.h>
 
+
 MODULE_AUTHOR("hsmits <hsmits@student.codam.nl>");
 MODULE_ALIAS("Iroh");
 MODULE_LICENSE("GPL v2");
 
-#define MOD_NAME "ft_mount"
+#define MOD_NAME "mymounts"
+
 
 static void *ct_seq_start(struct seq_file *s, loff_t *pos)
 {
@@ -30,32 +32,17 @@ static void ct_seq_stop(struct seq_file *s, void *v)
 {
 }
 
-static int		ct_show_mount(struct vfsmount *mount, void *data)
-{
-	struct super_block  *sb;
-	struct path	    dev_path = { .mnt = mount,
-					 .dentry = mount->mnt_root };
-
-	sb = mount->mnt_sb;
-	if (sb->s_op->show_devname) {
-		sb->s_op->show_devname(data, mount->mnt_root);
-	} else {
-		seq_printf(data, "%s", sb->s_id);
-	}
-	seq_puts(data, "\t\t");
-	seq_path(data, (const struct path *)&dev_path, "\t\n\b\r\a ");
-	seq_putc(data, '\n');
-	return (0);
-}
-
 static int ct_seq_show(struct seq_file *s, void *v)
 {
-	struct vfsmount	   *mounts;
+	struct dentry *curdentry;
+	seq_printf(s, "root\t/\n");
 
-	mounts = collect_mounts((const struct path *)&current->fs->root);
-	if (IS_ERR(mounts))
-		return -EPERM;
-	return (iterate_mounts(&ct_show_mount, s, mounts));
+	list_for_each_entry(curdentry, &current->fs->root.mnt->mnt_root->d_subdirs, d_child){
+		if (curdentry->d_flags & DCACHE_MOUNTED)
+			seq_printf(s, "%s\t/%s\n", curdentry->d_name.name, curdentry->d_name.name);
+	}
+
+	return (0);	
 }
 
 static const struct seq_operations  ct_seq_ops = {

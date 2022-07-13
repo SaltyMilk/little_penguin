@@ -14,7 +14,7 @@ FLAGS= $(EXTRAFLAGS)
 ccflags-y= $(EXTRAFLAGS)
 
 all:
-	make -C $(KDIR) M=$(PWD) modules
+	make -C $(KDIR) M=$(PWD) modules 
 
 modules_install: all
 	sudo make -C $(KDIR) M=$(PWD) modules_install
