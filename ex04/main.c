@@ -4,7 +4,7 @@
 #include <linux/hid.h>
 #include <linux/usb.h>
 
-MODULE_AUTHOR("IROH");
+MODULE_AUTHOR("sel-melc");
 MODULE_DESCRIPTION("Print a message to the kernel log once a USB device is attached");
 MODULE_LICENSE("GPL");
 

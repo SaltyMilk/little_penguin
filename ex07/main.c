@@ -10,11 +10,11 @@
 #include <linux/errno.h>
 #include <linux/debugfs.h>
 
-MODULE_AUTHOR("IROH");
+MODULE_AUTHOR("sel-melc");
 MODULE_DESCRIPTION("Having fun with debugfs.");
 MODULE_LICENSE("GPL");
 
-#define INTRA_LOGIN "hsmits"
+#define INTRA_LOGIN "sel-melc"
 
 static struct	dentry *dfs_dir;
 static struct	dentry *id_file;

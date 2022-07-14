@@ -9,7 +9,7 @@
 #include <linux/fs_struct.h>
 
 
-MODULE_AUTHOR("hsmits <hsmits@student.codam.nl>");
+MODULE_AUTHOR("sel-melc");
 MODULE_ALIAS("Iroh");
 MODULE_LICENSE("GPL v2");
 

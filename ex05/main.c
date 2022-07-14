@@ -9,11 +9,11 @@
 #include <linux/uaccess.h>
 #include <linux/errno.h>
 
-MODULE_AUTHOR("IROH");
+MODULE_AUTHOR("sel-melc");
 MODULE_DESCRIPTION("A simple login module");
 MODULE_LICENSE("GPL");
 
-#define INTRA_LOGIN "hsmits"
+#define INTRA_LOGIN "sel-melc"
 
 static ssize_t handle_read(struct file *file, char __user *to, size_t size, loff_t *_offset)
 {

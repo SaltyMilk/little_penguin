@@ -7,7 +7,7 @@
 #include <linux/slab.h>
 
 MODULE_LICENSE("GPL v2");
-MODULE_AUTHOR("Iroh <hsmits@student.codam.nl>");
+MODULE_AUTHOR("sel-melc");
 MODULE_DESCRIPTION("Funny FD module");
 
 static char str[PAGE_SIZE + 1];

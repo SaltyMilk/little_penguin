@@ -4,7 +4,7 @@
 #include <linux/delay.h>
 #include <linux/slab.h>
 
-MODULE_AUTHOR("IROH");
+MODULE_AUTHOR("sel-melc");
 MODULE_LICENSE("GPL");
 
 int do_work(int *my_int, int retval)
